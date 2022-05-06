@@ -22,12 +22,12 @@
       <nav class="navigation">
         <img class="logo" src="images/LOGO1.png" alt="Comunity sciens museum logo" />
         <ul>
-          <li><a href="#">Visit</a></li>
-          <li><a href="#">Explor</a></li>
-          <li><a href="#">Exebitions</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#" class="btn btn-booknow">Book now</a></li>
-          <li><a href="#" class="btn btn-donate">Donate</a></li>
+          <li><a class="navigation-link" href="#">Visit</a></li>
+          <li><a class="navigation-link" href="#">Explor</a></li>
+          <li><a class="navigation-link" href="#">Exebitions</a></li>
+          <li><a class="navigation-link" href="#">Events</a></li>
+          <li><a href="#" class="navigation-link btn btn-booknow">Book now</a></li>
+          <li><a href="#" class="navigation-link btn btn-donate">Donate</a></li>
           <div class="search">
             <input type="search" id="earch" name="search" />
             <button>Search</button>
@@ -45,18 +45,27 @@
         </div>
         <h1 class="heading-primary">Explore Together</h1>
         <p class="hero-description">
-          Come join us at the Community Science Museum where we’re committed to making science accessible to all.
+          At the Community Science Museum where we’re committed to making science accessible to all.
+        </p>
+      </section>
+
+      <section class="section-about">
+        <h2 class="heading-secondary">How we are.</h2>
+        <p class="about-description">
+          The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and
+          perhaps even ignite a lifelong passion to continue the exploration of the world around us.
         </p>
       </section>
 
       <section class="section-explore grid-3cols">
+        <h2 class="heading-secondary">How you are?</h2>
         <figure>
           <h3 class="heading-tertiary">Teachers</h3>
           <img src="images/teachers (1).jpg" alt="" />
           <figcaption>
             As a community-driven museum, we want to work with schools to create places of learning and exploring.
           </figcaption>
-          <a href="#"><i class="fa-solid fa-circle-arrow-right"></i>Read more</a>
+          <a href="#" class="read-more-link"><i class="fa-solid fa-circle-arrow-right"></i>Read more</a>
         </figure>
         <figure>
           <h3 class="heading-tertiary">Children</h3>
@@ -65,21 +74,14 @@
             Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to
             see and do.
           </figcaption>
-          <a href="#"><i class="fa-solid fa-circle-arrow-right"></i> Read more</a>
+          <a href="#" class="read-more-link"><i class="fa-solid fa-circle-arrow-right"></i> Read more</a>
         </figure>
         <figure>
           <h3 class="heading-tertiary">Researcher</h3>
           <img src="images/researchers.png" alt="" />
           <figcaption>Are you looking to get involved with our team of researchers and academics?</figcaption>
-          <a href="#"><i class="fa-solid fa-circle-arrow-right"></i>Read more</a>
+          <a href="#" class="read-more-link"><i class="fa-solid fa-circle-arrow-right"></i>Read more</a>
         </figure>
-      </section>
-
-      <section class="section-about">
-        <p>
-          The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and
-          perhaps even ignite a lifelong passion to continue the exploration of the world around us.
-        </p>
       </section>
 
       <section class="section-exhibitions grid-3cols">
@@ -90,7 +92,7 @@
           <figcaption>
             Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky.
           </figcaption>
-          <a href="#"><i class="fa-solid fa-circle-arrow-right"></i>Read more</a>
+          <a href="#" class="read-more-link"><i class="fa-solid fa-circle-arrow-right"></i>Read more</a>
         </figure>
         <figure>
           <img src="images/evolution.png" alt="" />
@@ -99,7 +101,7 @@
             For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come
             from and how did we get here?
           </figcaption>
-          <a href="#"><i class="fa-solid fa-circle-arrow-right"></i>Read more</a>
+          <a href="#" class="read-more-link"><i class="fa-solid fa-circle-arrow-right"></i>Read more</a>
         </figure>
         <figure>
           <img src="images/biology.png" alt="" />
@@ -108,7 +110,7 @@
             From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into
             the great wonders of the tiny world.
           </figcaption>
-          <a href="#"><i class="fa-solid fa-circle-arrow-right"></i>Read more</a>
+          <a href="#" class="read-more-link"><i class="fa-solid fa-circle-arrow-right"></i>Read more</a>
         </figure>
         <figure>
           <img src="images/robotics.png" alt="" />
@@ -116,7 +118,7 @@
           <figcaption>
             The information revolution is here and robotics and artificial intelligence are the science of the future.
           </figcaption>
-          <a href="#"><i class="fa-solid fa-circle-arrow-right"></i>Read more</a>
+          <a href="#" class="read-more-link"><i class="fa-solid fa-circle-arrow-right"></i>Read more</a>
         </figure>
         <figure>
           <img src="images/encology.png" alt="" />
@@ -125,7 +127,7 @@
             As we learn more and more of the impact humans are having on the planet, the more important it becomes that
             scientists explore
           </figcaption>
-          <a href="#"><i class="fa-solid fa-circle-arrow-right"></i>Read more</a>
+          <a href="#" class="read-more-link"><i class="fa-solid fa-circle-arrow-right"></i>Read more</a>
         </figure>
         <figure>
           <img src="images/art.png" alt="" />
@@ -134,7 +136,7 @@
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
             dolore magna aliquyam erat, sed diam voluptua.
           </figcaption>
-          <a href="#"><i class="fa-solid fa-circle-arrow-right"></i>Read more</a>
+          <a href="#" class="read-more-link"><i class="fa-solid fa-circle-arrow-right"></i>Read more</a>
         </figure>
       </section>
       <section class="section-events">
@@ -164,6 +166,45 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer container">
+      <h3 class="heading-tertiary">Community Science Museum</h3>
+      <img src="images/logo.svg" alt="Community Science Museum logo" />
+      <div class="opening-hours">
+        <h4>Opening Hours</h4>
+        <p>Tuesday- Friday 10am-4 pm</p>
+        <p>Saturday- Sunday 9am-6pm</p>
+      </div>
+      <div class="contact-us">
+        <h4>Contact Us</h4>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+      <div class="adresse">
+        <p>Bygning 620150 Oslo Norge</p>
+        <p>Tel +476382726</p>
+        <p>E-mail CSMuseum@gmail.com</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Visit</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Exebitions</a>
+      </div>
+      <div class="footer-links">
+        <a href="#">Food and Drink</a>
+        <a href="#">Shop</a>
+      </div>
+      <div class="get-involved">
+        <p>Get Involved</p>
+        <a href="#" class="btn">Donate</a>
+      </div>
+      <div class="newsletter">
+        <p>Subscribe to Newsletter</p>
+        <input type="email" id="email" />
+        <input type="submit" id="submit" value="Submit" />
+      </div>
+      <p class="copy-right">&copy;2022 Community Science Museum-</p>
+    </footer>
   </body>
 </html>
