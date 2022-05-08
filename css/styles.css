@@ -96,7 +96,7 @@ i {
 }
 
 .gap {
-  column-gap: 6rem;
+  column-gap: 4rem;
 }
 
 .container {
@@ -121,9 +121,6 @@ i {
 .logo {
   max-width: 20rem;
   opacity: 0.6;
-}
-
-.navigation {
 }
 
 .navigation ul {
@@ -226,7 +223,7 @@ label[for="mobile-nav"] i {
   background-repeat: no-repeat;
   background-position-y: top center;
 
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .hero-text {
@@ -330,6 +327,9 @@ label[for="mobile-nav"] i {
   grid-template-columns: auto 1fr;
   grid-template-rows: 1fr 1fr auto auto;
   column-gap: 5rem;
+
+  border: 2px solid #00c1ff;
+  padding: 4rem;
 
   margin-bottom: 12rem;
 }

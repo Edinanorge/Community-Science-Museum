@@ -8,6 +8,7 @@
   .header {
     font-size: 1.6rem;
   }
+
   .section-about p {
     font-size: 1.8rem;
   }
@@ -37,6 +38,11 @@
 
   .heading-primary {
     font-size: 6.4rem;
+  }
+
+  .section-hero::before {
+    background-position-y: center;
+    background-position-x: right;
   }
 
   .hero-description {
@@ -82,7 +88,7 @@
   .navigation li {
     padding: 4rem;
     text-transform: uppercase;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     border-bottom: 1px solid rgba(211, 208, 208, 0.4);
   }
   .search {
@@ -99,7 +105,19 @@
     grid-template-columns: 1fr;
   }
 
+  figure {
+    border: 1px solid rgba(211, 208, 208, 0.7);
+    padding: 4rem 2rem;
+  }
+
   .heading-primary {
     font-size: 5.2rem;
+  }
+  .section-hero::before {
+    background-position-y: top;
+    background-position-x: center;
+  }
+  .event {
+    padding: 4rem 2rem;
   }
 }
