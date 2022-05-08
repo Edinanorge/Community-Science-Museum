@@ -19,15 +19,16 @@
 
   <body>
     <header class="header">
-      <img class="logo" src="images/LOGO1.png" alt="Comunity sciens museum logo" />
+      <a href="index.html"><img class="logo" src="images/LOGO1.png" alt="Comunity sciens museum logo" /></a>
       <label for="mobile-nav"><i class="fa-solid fa-bars"></i></label>
       <input type="checkbox" id="mobile-nav" class="mobile-nav" />
       <nav class="navigation">
         <ul>
+          <li><a class="navigation-link" href="#about">About</a></li>
+          <li><a class="navigation-link" href="#explore">Explor</a></li>
+          <li><a class="navigation-link" href="#exhibitions">Exhibitions</a></li>
+          <li><a class="navigation-link" href="#events">Events</a></li>
           <li><a class="navigation-link" href="#">Visit</a></li>
-          <li><a class="navigation-link" href="#">Explor</a></li>
-          <li><a class="navigation-link" href="#">Exebitions</a></li>
-          <li><a class="navigation-link" href="#">Events</a></li>
           <li><a href="#" class="navigation-link btn btn-booknow">Book now</a></li>
           <li><a href="#" class="navigation-link btn btn-donate">Donate</a></li>
           <li class="search">
@@ -48,12 +49,12 @@
         <div class="hero-text">
           <h1 class="heading-primary">Explore Together</h1>
           <p class="hero-description">
-            At the Community Science Museum where we’re committed to making science accessible to all.
+            At the Community Science Museum where we’re committed to make science accessible to all.
           </p>
         </div>
       </section>
 
-      <section class="section-about container grid-2cols">
+      <section id="about" class="section-about container grid-2cols">
         <img src="images/museum-about.jpg" alt="" />
         <div class="about-text">
           <h2 class="heading-secondary">How we are.</h2>
@@ -68,7 +69,7 @@
         </div>
       </section>
 
-      <section class="section-explore container grid-3cols">
+      <section id="explore" class="section-explore container grid-3cols">
         <h2 class="heading-secondary">How you are?</h2>
         <figure>
           <h3 class="heading-tertiary">Teachers</h3>
@@ -95,7 +96,7 @@
         </figure>
       </section>
 
-      <section class="section-exhibitions container grid-3cols">
+      <section id="exhibitions" class="section-exhibitions container grid-3cols">
         <h2 class="heading-secondary">Exhibition Spaces</h2>
         <figure>
           <img src="images/cosmology.jpg" alt="" />
@@ -151,7 +152,7 @@
         </figure>
       </section>
 
-      <section class="section-events">
+      <section id="events" class="section-events">
         <div class="container grid-3cols gap">
           <h2 class="heading-secondary">Our guided tours</h2>
           <div class="event">
@@ -178,7 +179,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer container grid-5cols">
+    <footer class="footer container grid-4cols">
       <h3 class="heading-tertiary">Community Science Museum</h3>
       <img src="images/logo.svg" alt="Community Science Museum logo" />
       <div class="opening-hours">
