@@ -39,7 +39,6 @@ img {
 }
 
 figure {
-  /* max-width: 50rem; */
   margin: 0 auto;
   display: grid;
   grid-template-rows: auto auto 1fr auto;
@@ -68,7 +67,7 @@ i {
   color: #5300b8;
   margin-bottom: 1rem;
   font-size: 2.8rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .heading-tertiary {
@@ -76,18 +75,19 @@ i {
   font-family: "lora", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2.4rem;
   font-weight: 600;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
 }
 
 .grid-3cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 6rem;
+  row-gap: 10rem;
 }
 
 .grid-2cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 6rem;
 }
 
 .grid-5cols {
@@ -95,10 +95,14 @@ i {
   grid-template-columns: repeat(5, auto);
 }
 
+.gap {
+  column-gap: 6rem;
+}
+
 .container {
   max-width: 80%;
   margin: 0 auto;
-  padding: 6rem 0;
+  padding-top: 10rem;
 }
 
 /* NAV */
@@ -108,11 +112,18 @@ i {
   font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
   font-size: 2rem;
+
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
 }
 
 .logo {
   max-width: 20rem;
   opacity: 0.6;
+}
+
+.navigation {
 }
 
 .navigation ul {
@@ -178,6 +189,17 @@ i {
   color: #5300b8;
 }
 
+/* mobile nav */
+label {
+  margin: 0 40 0 0;
+  opacity: 0.8;
+  display: none;
+}
+
+#mobile-nav {
+  display: none;
+}
+
 /* SECTION HERO */
 
 .section-hero {
@@ -197,12 +219,12 @@ i {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url(../images/hero-img.png);
+  background-image: url(../images/HEro.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: top center;
-  background-position-x: right center;
-  opacity: 0.5;
+
+  opacity: 0.6;
 }
 
 .hero-text {
@@ -214,6 +236,7 @@ i {
   font-family: "Lora", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   text-align: center;
+  font-size: 2.8rem;
 }
 
 .free-admission {
@@ -224,7 +247,6 @@ i {
   background-color: #5300b8;
   color: #fff;
   padding: 2rem;
-  opacity: 0.6;
   display: inline-block;
 }
 
@@ -243,6 +265,12 @@ i {
 
 .section-about p {
   font-size: 2rem;
+  line-height: 1.5;
+  margin: 2rem 0;
+}
+
+.about-text {
+  justify-self: center;
 }
 
 /* SECTION EXPLORE */
@@ -261,11 +289,10 @@ i {
 .read-more-link:active {
 }
 
-/* SECTION EXHIBITOPN */
-/* .explorer {
-  display: inline-block;
-} */
-
+/* SECTION EXHIBITIONS */
+.section-exhibitions {
+  margin-bottom: 16rem;
+}
 .section-exhibitions h3 {
   text-align: left;
 }
@@ -376,11 +403,12 @@ i {
   color: #333;
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
 .footer-links a:hover,
 .footer-links a:active {
-  color: #5300b8;
+  text-decoration: underline;
 }
 
 .opening-hours,

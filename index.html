@@ -19,8 +19,10 @@
 
   <body>
     <header class="header">
+      <img class="logo" src="images/LOGO1.png" alt="Comunity sciens museum logo" />
+      <label for="mobile-nav"><i class="fa-solid fa-bars"></i></label>
+      <input type="checkbox" id="mobile-nav" class="mobile-nav" />
       <nav class="navigation">
-        <img class="logo" src="images/LOGO1.png" alt="Comunity sciens museum logo" />
         <ul>
           <li><a class="navigation-link" href="#">Visit</a></li>
           <li><a class="navigation-link" href="#">Explor</a></li>
@@ -28,10 +30,10 @@
           <li><a class="navigation-link" href="#">Events</a></li>
           <li><a href="#" class="navigation-link btn btn-booknow">Book now</a></li>
           <li><a href="#" class="navigation-link btn btn-donate">Donate</a></li>
-          <div class="search">
+          <li class="search">
             <input type="search" id="earch" name="search" />
             <button>Search</button>
-          </div>
+          </li>
         </ul>
       </nav>
     </header>
@@ -51,11 +53,18 @@
       </section>
 
       <section class="section-about container grid-2cols">
-        <h2 class="heading-secondary">How we are.</h2>
-        <p class="about-description">
-          The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and
-          perhaps even ignite a lifelong passion to continue the exploration of the world around us.
-        </p>
+        <img src="images/museum-about.jpg" alt="" />
+        <div class="about-text">
+          <h2 class="heading-secondary">How we are.</h2>
+          <p class="about-description">
+            The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and
+            perhaps even ignite a lifelong passion to continue the exploration of the world around us.
+          </p>
+          <p>
+            We believe science should not be confined to the textbook, but brought to live through exhibits. This is why
+            we have over 1000 different exhibits on the many varied subjects of science to explore.
+          </p>
+        </div>
       </section>
 
       <section class="section-explore container grid-3cols">
@@ -142,7 +151,7 @@
       </section>
 
       <section class="section-events">
-        <div class="container grid-3cols">
+        <div class="container grid-3cols gap">
           <h2 class="heading-secondary">Our guided tours</h2>
           <div class="event">
             <h3 class="heading-tertiary">Visiting Professor of Aeronautics</h3>
@@ -198,7 +207,7 @@
         <a href="#">Shop</a>
       </div>
       <div class="get-involved">
-        <p>Get Involved</p>
+        <h4>Get Involved</h4>
         <a href="#" class="btn">Donate</a>
       </div>
       <div class="newsletter">
