@@ -1,0 +1,90 @@
+/* NAV LINKS */
+
+.navigation-link,
+.btn {
+  padding: 0.5rem 2rem;
+  border-radius: 2px;
+}
+
+.navigation-link:link,
+.navigation-link:visited {
+  text-decoration: none;
+  color: #333;
+}
+
+.navigation-link:hover,
+.navigation-link:active {
+  background-color: #e6e6e6;
+}
+
+/* BOOK NOW AND DONATE */
+
+.btn-booknow:link,
+.btn-booknow:visited {
+  background-color: #ffd700;
+}
+
+.btn-booknow:hover,
+.btn-booknow:active {
+  background-color: #e6c200;
+  color: #333;
+}
+
+.btn-donate:link,
+.btn-donate:visited {
+  background-color: #00c1ff;
+}
+
+.btn-donate:hover,
+.btn-donate:active {
+  background-color: #00aee6;
+  color: #333;
+}
+
+/*READ MORE  */
+.read-more-link:link,
+.read-more-link:visited {
+  text-decoration: none;
+  color: #5300b8;
+  margin-top: 2rem;
+}
+
+.read-more-link:hover,
+.read-more-link:active {
+}
+
+/* EVENTS LINKS */
+.btn-cta:link,
+.btn-cta:visited {
+  display: inline-block;
+
+  background-color: #333;
+  color: #ffd700;
+  text-decoration: none;
+  font-size: 2.2rem;
+
+  transition: all 0.3s;
+}
+
+.btn-cta:hover,
+.btn-cta:active {
+  color: #333;
+  background-color: #ffd700;
+  box-shadow: inset 0 0 0 1px #333;
+}
+
+/* FOOTER LINKS */
+
+.footer-links a:link,
+.footer-links a:visited {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-links a:hover,
+.footer-links a:active {
+  text-decoration: underline;
+}
