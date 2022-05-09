@@ -161,7 +161,7 @@ label[for="mobile-nav"] i {
 }
 
 .section-events::before {
-  content: "Ongoing";
+  content: "spetial";
   position: absolute;
   top: 4rem;
   right: -5rem;
@@ -258,3 +258,41 @@ label[for="mobile-nav"] i {
   text-decoration: none;
   color: #333;
 }
+
+/* ******************* */
+/* Visit page */
+
+.section-visit h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  font-size: 2.2rem;
+}
+.section-visit p {
+  margin: 0 3rem;
+}
+.section-visit img {
+  width: 100%;
+  height: 50rem;
+  object-fit: cover;
+}
+
+.opening {
+  display: inline-block;
+  padding: 0 2rem 3rem 3rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  background-color: #ffd700;
+  border-radius: 4rem;
+  height: fit-content;
+  align-content: center;
+
+  width: 30rem;
+}
+
+.opening p {
+  margin: 0;
+}
+
+/* ******************* */
+/* Visit page */

@@ -39,6 +39,12 @@ figure {
   grid-template-rows: auto auto 1fr auto;
 }
 
+figure img {
+  height: 35rem;
+  width: 60rem;
+  object-fit: cover;
+}
+
 figcaption {
   line-height: 1.6;
   padding-right: 2rem;

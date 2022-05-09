@@ -44,6 +44,7 @@
 /*READ MORE  */
 .read-more-link:link,
 .read-more-link:visited {
+  display: inline-block;
   text-decoration: none;
   color: #5300b8;
   margin-top: 2rem;
