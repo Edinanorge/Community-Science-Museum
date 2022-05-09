@@ -5,31 +5,13 @@
 }
 
 @media (max-width: 1200px) {
-  .header {
-    font-size: 1.6rem;
-  }
-
-  .section-about p {
-    font-size: 1.8rem;
-  }
-  .section-events .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    text-align: center;
-  }
   /* navigatio */
   .header {
     display: flex;
     justify-content: space-around;
     position: relative;
     text-align: center;
+    font-size: 1.6rem;
   }
 
   label[for="mobile-nav"] {
@@ -70,6 +52,23 @@
 
   #mobile-nav:checked ~ .navigation {
     display: block;
+  }
+
+  .section-about p {
+    font-size: 1.8rem;
+  }
+
+  .section-events .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
   }
 }
 

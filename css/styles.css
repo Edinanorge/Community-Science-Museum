@@ -72,7 +72,7 @@ label[for="mobile-nav"] i {
   justify-content: center;
   align-items: center;
 
-  min-height: 80vh;
+  height: 100vh;
 }
 
 .section-hero::before {
@@ -125,19 +125,6 @@ label[for="mobile-nav"] i {
 }
 
 /* SECTION ABOUT */
-.section-about {
-  animation: loading 2s;
-}
-
-@keyframes loading {
-  from {
-    transform: translateY(30rem);
-  }
-
-  to {
-    transform: translateY(0);
-  }
-}
 
 .section-about p {
   font-size: 2rem;
