@@ -29,6 +29,7 @@
     display: flex;
     justify-content: space-around;
     position: relative;
+    text-align: center;
   }
 
   label[for="mobile-nav"] {
@@ -97,6 +98,13 @@
 
   .about-text {
     grid-row: 1/-1;
+  }
+
+  .event {
+    margin-bottom: 0;
+  }
+  .event:last-child {
+    margin-bottom: 8rem;
   }
 }
 
