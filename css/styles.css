@@ -201,6 +201,10 @@ label[for="mobile-nav"] i {
 }
 
 /* FOOTER */
+.footer {
+  background-color: #f6f1e6;
+  margin-top: 6rem;
+}
 
 .footer h3,
 .footer img,
@@ -261,20 +265,22 @@ label[for="mobile-nav"] i {
 
 /* ******************* */
 /* Visit page */
+.section-visit {
+  margin-bottom: 6rem;
+}
 
-.section-visit h2 {
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  font-size: 2.2rem;
-}
 .section-visit p {
-  margin: 0 3rem;
+  margin-bottom: 3rem;
 }
-.section-visit img {
+
+.cover-img {
   width: 100%;
   height: 50rem;
   object-fit: cover;
+}
+
+.info {
+  grid-column: 1;
 }
 
 .opening {
@@ -295,4 +301,4 @@ label[for="mobile-nav"] i {
 }
 
 /* ******************* */
-/* Visit page */
+/* Donate page */
