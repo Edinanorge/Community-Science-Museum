@@ -27,44 +27,48 @@
       <input type="checkbox" id="mobile-nav" class="mobile-nav" />
       <nav class="navigation">
         <ul>
-          <li><a class="navigation-link" href="#about">About</a></li>
-          <li><a class="navigation-link" href="#explore">Explor</a></li>
-          <li><a class="navigation-link" href="#exhibitions">Exhibitions</a></li>
-          <li><a class="navigation-link" href="#events">Events</a></li>
-          <li><a class="navigation-link current" href="visit.html">Visit</a></li>
+          <li><a class="navigation-link" href="index.html#about">About</a></li>
+          <li><a class="navigation-link" href="index.html#explore">Explor</a></li>
+          <li><a class="navigation-link" href="index.html#exhibitions">Exhibitions</a></li>
+          <li><a class="navigation-link" href="index.html#events">Events</a></li>
+          <li><a class="navigation-link" href="visit.html">Visit</a></li>
           <li><a href="booking.html" class="navigation-link btn btn-booknow">Book now</a></li>
-          <li><a href="donate.html" class="navigation-link btn btn-donate current">Donate</a></li>
+          <li><a href="donate.html" class="navigation-link btn btn-donate">Donate</a></li>
           <li class="search">
             <label for="search">Search</label>
             <input type="search" id="search" name="search" />
-            <button>Search</button>
           </li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="section-donate">
-        <img class="cover-img" src="images/encology.jpg" alt="" />
-        <div class="container grid-2cols">
+        <div class="container grid-3cols">
           <h1 class="heading-primary-nr2">There are various ways you can support the museum.</h1>
-          <div>
-          <h2 class="heading-secondary-nr2">Donate</h2>
-          <p>
-            Donations are very welcome and are an important way we keep this museum open and accessible to the whole
-            community.
-          </p>
-
-          <p>
-            You can also support us by donating items of interest to the museum’s collections. If you have some item or
-            collection that you think others would enjoy, please let us know by contacting our Collections Department
-            and they will be able to assist you.
-          </p>
-        </div>
-        <img scr="images/donate.jpg" alt="" />
-        <div>
+          
+          <figure class="support">
+            <img src="images/donate.jpg" alt="" >
+            <figcaption>
+            <h2 class="heading-secondary-nr2">Donate</h2>
+            <p>
+              Donations are very welcome and are an important way we keep this museum open and accessible to the whole
+              community.
+            </p>
+            
+            <p>
+              You can also support us by donating items of interest to the museum’s collections. If you have some item or
+              collection that you think others would enjoy, please let us know by contacting our Collections Department
+              and they will be able to assist you.
+            </p>
+            <a href="#" class="btn btn-donate">Donate</a>
+          </figcaption>
+          </figure>
+        
+        <figure class="support" >
+          <img src="images/volunteer.jpg" alt="" />
+          <figcaption>
           <h2 class="heading-secondary-nr2">Volunteer</h2>
-          <p>
-            A number of people volunteer their time and effort to keep the displays in good order and ready for visitors
+          <p>A number of people volunteer their time and effort to keep the displays in good order and ready for visitors
             to come and enjoy.
           </p>
           <p>
@@ -76,16 +80,21 @@
             You can help volunteer in a number of different spheres. Please contact us if you’d like to find out more
             about how you can get involved.
           </p>
-        </div>
-        <img scr="images/volunteer.jpg" alt="" />
-        <div>
+          <a href="#" class="btn btn-donate">Volunteer</a>
+        </figcaption>
+        </figure>
+        
+        <figure class="support"> 
+          <img src="images/internships.jpg" alt="" />
+          <figcaption>
           <h2 class="heading-secondary-nr2">Internships</h2>
           <p>
             Are you interested in working in a museum? Do you enjoy the fun and excitement of sharing the wonders of
             nature with people? Well you could be just the right person to enjoy an internship at the museum.
           </p>
-        </div>
-        <img scr="images/internships.jpg" alt="" />
+          <a href="#" class="btn btn-donate">Internships</a>
+          </figcaption>
+        </figure>
       </section>
     </main>
     <footer class="footer">

@@ -11,7 +11,8 @@
     justify-content: space-around;
     position: relative;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    position: fixed;
   }
 
   label[for="mobile-nav"] {
@@ -64,7 +65,7 @@
     align-items: center;
   }
 
-  .footer {
+  .grid-4cols {
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -114,7 +115,7 @@
 
   figure {
     border: 1px solid rgba(211, 208, 208, 0.7);
-    padding: 4rem 2rem;
+    padding: 2rem;
   }
 
   .heading-primary {

@@ -2,14 +2,17 @@
 
 .navigation-link,
 .btn {
+  display: inline-block;
   padding: 0.5rem 2rem;
   border-radius: 2px;
+  color: #282828;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .navigation-link:link,
 .navigation-link:visited {
   text-decoration: none;
-  color: #333;
 }
 
 .navigation-link:hover,
@@ -27,7 +30,6 @@
 .btn-booknow:hover,
 .btn-booknow:active {
   background-color: #e6c200;
-  color: #333;
 }
 
 .btn-donate:link,
@@ -38,7 +40,6 @@
 .btn-donate:hover,
 .btn-donate:active {
   background-color: #00aee6;
-  color: #333;
 }
 
 /*READ MORE  */
