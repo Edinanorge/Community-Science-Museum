@@ -41,8 +41,8 @@
   max-width: 10rem;
 }
 
-.current {
-  text-decoration: underline;
+.navigation-link.current {
+  background-color: #e6e6e6;
 }
 
 /* mobile nav */
@@ -131,8 +131,45 @@ label[for="mobile-nav"] i {
 }
 
 /* SECTION EXPLORE */
+.section-explore a {
+  text-decoration: none;
+  color: #333;
+  display: inline-block;
+}
 .section-explore h3 {
   text-align: center;
+}
+
+.section-explore img {
+  height: 20rem;
+  object-fit: cover;
+}
+
+.explorer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr auto;
+
+  border: 1px solid rgba(211, 208, 208, 0.4);
+  padding: 2rem;
+}
+
+.explorer-link {
+  grid-column: 1/-1;
+
+  transition: all 1s;
+}
+
+.explorer-link:hover {
+  transform: scale(1.05);
+}
+
+.explorer .read-more-link {
+  grid-column: 2/3;
+}
+
+.explorer p {
+  padding-right: 2rem;
 }
 
 /* SECTION EXHIBITIONS */
@@ -142,6 +179,13 @@ label[for="mobile-nav"] i {
 
 .section-exhibitions h3 {
   text-align: left;
+}
+
+.exhibition {
+  transition: all 1s;
+}
+.exhibition:hover {
+  background-color: rgba(211, 208, 208, 0.4);
 }
 
 /* SECTION EVENTS */
@@ -161,7 +205,7 @@ label[for="mobile-nav"] i {
   right: -5rem;
   transform: rotate(37deg);
   background-color: #00c1ff;
-  padding: 1rem 8rem;
+  padding: 1rem 10rem;
   font-size: 2.5rem;
   font-weight: 800;
   letter-spacing: 0.3rem;
@@ -172,17 +216,24 @@ label[for="mobile-nav"] i {
   justify-self: end;
   max-width: 40rem;
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr 1fr auto auto;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr auto 1fr auto auto;
   column-gap: 5rem;
 
   margin-bottom: 12rem;
+  max-width: 35rem;
 }
 
 .event h3,
 .event-description,
-.event-date {
+.event-date,
+.event-price {
   grid-column: 1/-1;
+}
+
+.event-price {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
 }
 
 .event-date {
@@ -190,8 +241,11 @@ label[for="mobile-nav"] i {
 }
 
 .event-description {
-  margin-bottom: 1rem;
-  max-width: 50rem;
+  margin: 1rem 0;
+}
+
+.event .btn {
+  grid-column: 2/3;
 }
 
 /* FOOTER */
@@ -260,6 +314,10 @@ label[for="mobile-nav"] i {
   color: #333;
 }
 
+.newsletter {
+  margin-top: 3rem;
+}
+
 /* ******************* */
 /* Visit page */
 
@@ -277,16 +335,68 @@ label[for="mobile-nav"] i {
   line-height: 1.7;
   text-transform: uppercase;
   background-color: #ffd700;
-  border-radius: 4rem;
   height: fit-content;
   align-self: center;
 
   width: 30rem;
+  margin: 0 auto;
 }
 
 .opening p {
   margin: 0;
 }
 
+.contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr;
+  column-gap: 3rem;
+  align-self: center;
+}
+
+.contact h2 {
+  grid-column: 1/-1;
+}
+.contact i {
+  color: #5300b8;
+  font-size: 5rem;
+}
+
+/* ******************* */
+/* Book now page */
+
+.booking-events h2 {
+  grid-column: 1/-1;
+}
+
+.booking-events.grid-3cols {
+  row-gap: 2rem;
+}
+
+.booking-event {
+  border: 1px solid rgba(211, 208, 208, 0.4);
+  box-shadow: 0 6px 10px rgba(211, 208, 208, 0.4);
+
+  padding: 2rem;
+}
+
+.booking-event:hover {
+  box-shadow: 0 4px 8px rgba(211, 208, 208);
+}
+
+.booking-date {
+  grid-column: 1/2;
+  grid-row: 3;
+}
+
 /* ******************* */
 /* Donate page */
+
+.support p {
+  margin-bottom: 2rem;
+}
+
+.support a {
+  text-align: center;
+  text-transform: uppercase;
+}

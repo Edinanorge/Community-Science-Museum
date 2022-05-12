@@ -24,7 +24,7 @@ html {
 body {
   font-family: "Roboto", "Lora", "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.8rem;
-  line-height: 1.3;
+  line-height: 1.7;
   font-weight: 400;
   color: #333;
 }
@@ -33,9 +33,18 @@ img {
   max-width: 100%;
 }
 
+.cover-img {
+  width: 100%;
+  height: 60rem;
+  object-fit: cover;
+}
+
 figcaption {
   line-height: 1.6;
-  padding-right: 2rem;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
 }
 
 figure img {

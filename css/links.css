@@ -3,11 +3,13 @@
 .navigation-link,
 .btn {
   display: inline-block;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   border-radius: 2px;
   color: #282828;
   text-decoration: none;
   font-weight: 500;
+
+  transition: all 0.5s;
 }
 
 .navigation-link:link,
@@ -53,6 +55,8 @@
 
 .read-more-link:hover,
 .read-more-link:active {
+  background-color: #5300b8;
+  color: #fff;
 }
 
 /* EVENTS LINKS */
@@ -60,12 +64,10 @@
 .btn-cta:visited {
   display: inline-block;
 
-  background-color: #333;
-  color: #ffd700;
+  background-color: #5300b8;
+  color: #fffdf5;
   text-decoration: none;
   font-size: 2.2rem;
-
-  transition: all 0.3s;
 }
 
 .btn-cta:hover,

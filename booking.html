@@ -26,12 +26,12 @@
       <input type="checkbox" id="mobile-nav" class="mobile-nav" />
       <nav class="navigation">
         <ul>
-          <li><a class="navigation-link" href="#about">About</a></li>
-          <li><a class="navigation-link" href="#explore">Explor</a></li>
-          <li><a class="navigation-link" href="#exhibitions">Exhibitions</a></li>
-          <li><a class="navigation-link" href="#events">Events</a></li>
+          <li><a class="navigation-link" href="index.html#about">About</a></li>
+          <li><a class="navigation-link" href="index.html#explore">Explor</a></li>
+          <li><a class="navigation-link" href="index.html#exhibitions">Exhibitions</a></li>
+          <li><a class="navigation-link" href="index.html#events">Events</a></li>
           <li><a class="navigation-link" href="visit.html">Visit</a></li>
-          <li><a href="booking.html" class="navigation-link btn btn-booknow">Book now</a></li>
+          <li><a href="booking.html" class="navigation-link btn btn-booknow current">Book now</a></li>
           <li><a href="donate.html" class="navigation-link btn btn-donate">Donate</a></li>
           <li class="search">
             <label for="search">Search</label>
@@ -41,148 +41,81 @@
       </nav>
     </header>
     <main>
-      <section class="section-booking ">
-        <div class="container">
-        <h1 class="heading-primary-nr2">You can book your guided tour here:</h1>
-        <h2 class="heading-secondary-nr2">Select event</h2>
-        <div>
-          <input type="checkbox" id="check" name="check">
-          <label for="check">Visiting Professor of
-            Aeronautics</label>
-        </div>
-        <div>
-          <input type="checkbox" id="check" name="check">
-          <label for="check">Night in the Museum</label>
-        </div>
-        <div>
-          <input type="checkbox" id="check" name="check">
-          <label for="check">Energetica Exhibition on Loan</label>
-        </div>
-        <h2 class="heading-secondary-nr2">Select date</h2>
-        <label for="date">lorem </label>
-        <input type="date" id="date" name="date" value="2022-05-22" min="2022-05-22" max="2025-01-01">
-        <table>
-        <caption>2022 mai</caption>
-        <thead>
-            <tr>
-                <th>Sun</th>
-                <th>Mon</th>
-                <th>Tue</th>
-                <th>Wed</th>
-                <th>Thu</th>
-                <th>Fri</th>
-                <th>sat</th>
-            </tr>
-        </thead>
-          
-        <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>1</td>
-                <td>2</td>
-            </tr>
-            <tr></tr>
-            <tr>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>11</td>
-                <td>12</td>
-                <td>13</td>
-                <td>14</td>
-                <td>15</td>
-                <td>16</td>
-            </tr>
-            <tr>
-                <td>17</td>
-                <td>18</td>
-                <td>19</td>
-                <td>20</td>
-                <td>21</td>
-                <td>22</td>
-                <td>23</td>
-            </tr>
-            <tr>
-                <td>24</td>
-                <td>25</td>
-                <td>26</td>
-                <td>27</td>
-                <td>28</td>
-                <td>29</td>
-                <td>30</td>
-            </tr>
-            <tr>
-                <td>31</td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-            </tr>
-        </tbody>
-    </table>
-      
-      </div>
+      <section class="section-booking">
+        <img src="images/booking.jpg" alt="" class="cover-img" />
+        <form methode="get" class="container">
+          <h1 class="heading-primary-nr2">You can book your guided tour here:</h1>
+          <div class="booking-events grid-3cols gap">
+            <h2 class="heading-secondary-nr2">Select event:</h2>
+            <div class="booking-event">
+              <input type="radio" id="professor" name="event" value="Visiting Professor of Aeronautics" />  
+              <label for="professor">Visiting Professor of Aeronautics</label>
+            </div>
+            <div class="booking-event">
+              <input type="radio" id="night" name="event" value="Night in the Museum" />  
+              <label for="night">Night in the Museum</label>
+            </div>
+            <div class="booking-event">
+              <input type="radio" id="loan" name="event" value="Energetica Exhibition on Loan" />  
+              <label for="loan">Energetica Exhibition on Loan</label>
+            </div>
+          </div>
 
-      <a href="#" class="btn btn-booknow">Pay now</a>
-      <a href="#" class="btn btn-donate">Pay at entrance</a>
+          <div class="booking-date">
+            <h2 class="heading-secondary-nr2">Select date</h2>
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" value="2022-05-22" min="2022-05-22" max="2025-01-01" />
+          </div>
+
+          <div class="pay">
+            <h2 class="heading-secondary-nr2">Select a paymant methode</h2>
+            <a href="#" class="btn btn-booknow">Pay now</a>
+            <a href="#" class="btn btn-donate">Pay at entrance</a>
+          </div>
+        </form>
       </section>
-
-    </main>  
+    </main>
     <footer class="footer">
-    <div class="container grid-4cols">
-      <h3 class="heading-tertiary">Community Science Museum</h3>
-      <img src="images/logo.svg" alt="Community Science Museum logo" />
-      <div class="opening-hours">
-        <h4>Opening Hours</h4>
-        <p>Tuesday- Friday 10am-4 pm</p>
-        <p>Saturday- Sunday 9am-6pm</p>
+      <div class="container grid-4cols">
+        <h3 class="heading-tertiary">Community Science Museum</h3>
+        <img src="images/logo.svg" alt="Community Science Museum logo" />
+        <div class="opening-hours">
+          <h4>Opening Hours</h4>
+          <p>Tuesday- Friday 10am-4 pm</p>
+          <p>Saturday- Sunday 9am-6pm</p>
+        </div>
+        <div class="contact-us">
+          <h4>Contact Us</h4>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div class="adresse">
+          <p>Bygning 620150 Oslo Norge</p>
+          <p>Tel +476382726</p>
+          <p>E-mail CSMuseum@gmail.com</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">Visit</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Exebitions</a>
+        </div>
+        <div class="footer-links">
+          <a href="#">Food and Drink</a>
+          <a href="#">Shop</a>
+        </div>
+        <div class="get-involved">
+          <h4>Get Involved</h4>
+          <a href="#" class="btn">Donate</a>
+        </div>
+        <div class="newsletter">
+          <label for="email">Subscribe to Newsletter</label>
+          <input type="email" id="email" name="email" />
+          <input type="submit" id="submit" value="Submit" />
+        </div>
+        <p class="copy-right">&copy;2022 Community Science Museum-</p>
       </div>
-      <div class="contact-us">
-        <h4>Contact Us</h4>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-      </div>
-      <div class="adresse">
-        <p>Bygning 620150 Oslo Norge</p>
-        <p>Tel +476382726</p>
-        <p>E-mail CSMuseum@gmail.com</p>
-      </div>
-      <div class="footer-links">
-        <a href="#">Visit</a>
-        <a href="#">Accessibility</a>
-        <a href="#">Exebitions</a>
-      </div>
-      <div class="footer-links">
-        <a href="#">Food and Drink</a>
-        <a href="#">Shop</a>
-      </div>
-      <div class="get-involved">
-        <h4>Get Involved</h4>
-        <a href="#" class="btn">Donate</a>
-      </div>
-      <div class="newsletter">
-        <label for="email">Subscribe to Newsletter</label>
-        <input type="email" id="email" name="email" />
-        <input type="submit" id="submit" value="Submit" />
-      </div>
-      <p class="copy-right">&copy;2022 Community Science Museum-</p>
-    </div>
-  </footer>
-</body>
-</html>
+    </footer>
+  </body>
 </html>
