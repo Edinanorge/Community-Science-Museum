@@ -58,6 +58,14 @@ i {
   font-size: 3rem;
 }
 
+form {
+  background-color: #ffd700;
+  margin: 0 4rem;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
 .heading-primary {
   font-size: 9.6rem;
   font-weight: 800;
@@ -103,7 +111,7 @@ i {
 }
 
 .gap {
-  column-gap: 4rem;
+  column-gap: 3rem;
 }
 
 .auto {

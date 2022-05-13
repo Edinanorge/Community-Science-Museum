@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Community Science Museum is committed to make science accessible to all." />
+    <title>Comunity Science museum / Home page</title>
+
+    <link href="css/general.css" rel="stylesheet" />
+    <link href="css/links.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500;1,600;1,700;1,800&family=Montserrat:wght@400;600;700;800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/16bf78a0e8.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="index.html"><img class="logo" src="images/LOGO1.png" alt="Comunity sciens museum logo" /></a>
+      <label for="mobile-nav"><i class="fa-solid fa-bars"></i></label>
+      <input type="checkbox" id="mobile-nav" class="mobile-nav" />
+      <nav class="navigation">
+        <ul>
+          <li><a class="navigation-link" href="index.html">About</a></li>
+          <li><a class="navigation-link current" href="index.html">Explor</a></li>
+          <li><a class="navigation-link" href="index.html">Exhibitions</a></li>
+          <li><a class="navigation-link" href="index.html">Events</a></li>
+          <li><a class="navigation-link" href="visit.html">Visit</a></li>
+          <li><a href="booking.html" class="navigation-link btn btn-booknow">Book now</a></li>
+          <li><a href="donate.html" class="navigation-link btn btn-donate">Donate</a></li>
+          <li class="search">
+            <label for="search">Search</label>
+            <input type="search" id="search" name="search" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-teachers">
+        <img class="cover-img" src="images/tarchers.png" alt="" />
+        <div class="container grid-2cols">
+          <h1 class="heading-primary-nr2">Teachers</h1>
+          <div class="teachers-text">
+          <p>As a community-driven museum, we want to work with schools to create places of learning and exploring.</p>
+          <p> Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them.</p>
+          <p>Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit.</p>
+        </div>
+          <form action="" method="post" class="form">
+            <label for="institute-name">Institute Name/ Name</label>
+            <input type="text" name="institute-name" id="institute-name">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="20" rows="5"></textarea>
+            <input type="submit" class="btn-submit" >
+          </form>
+
+    </main>
+    <footer class="footer">
+      <div class="container grid-4cols">
+        <h3 class="heading-tertiary">Community Science Museum</h3>
+        <img src="images/logo.svg" alt="Community Science Museum logo" />
+        <div class="opening-hours">
+          <h4>Opening Hours</h4>
+          <p>Tuesday- Friday 10am-4 pm</p>
+          <p>Saturday- Sunday 9am-6pm</p>
+        </div>
+        <div class="contact-us">
+          <h4>Contact Us</h4>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div class="adresse">
+          <p>Bygning 620150 Oslo Norge</p>
+          <p>Tel +476382726</p>
+          <p>E-mail CSMuseum@gmail.com</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">Visit</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Exebitions</a>
+        </div>
+        <div class="footer-links">
+          <a href="#">Food and Drink</a>
+          <a href="#">Shop</a>
+        </div>
+        <div class="get-involved">
+          <h4>Get Involved</h4>
+          <a href="#" class="btn">Donate</a>
+        </div>
+        <div class="newsletter">
+          <label for="email">Subscribe to Newsletter</label>
+          <input type="email" id="email" name="email" />
+          <input type="submit" id="submit" value="Submit" />
+        </div>
+        <p class="copy-right">&copy;2022 Community Science Museum-</p>
+      </div>
+    </footer>
+  </body>
+</html>

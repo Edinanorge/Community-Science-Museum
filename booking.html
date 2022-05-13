@@ -43,34 +43,43 @@
     <main>
       <section class="section-booking">
         <img src="images/booking.jpg" alt="" class="cover-img" />
-        <form methode="get" class="container">
+        <form methode="post" class="container">
           <h1 class="heading-primary-nr2">You can book your guided tour here:</h1>
           <div class="booking-events grid-3cols gap">
             <h2 class="heading-secondary-nr2">Select event:</h2>
             <div class="booking-event">
+              <img src="images/prof.png" alt="" />
               <input type="radio" id="professor" name="event" value="Visiting Professor of Aeronautics" />  
               <label for="professor">Visiting Professor of Aeronautics</label>
             </div>
             <div class="booking-event">
+              <img src="images/night.png" alt="" />
               <input type="radio" id="night" name="event" value="Night in the Museum" />  
               <label for="night">Night in the Museum</label>
             </div>
             <div class="booking-event">
+              <img src="images/loan.png" alt="" />
               <input type="radio" id="loan" name="event" value="Energetica Exhibition on Loan" />  
               <label for="loan">Energetica Exhibition on Loan</label>
             </div>
           </div>
+          <div class="grid-2cols">
+            <div class="booking-date">
+              <h2 class="heading-secondary-nr2">Select date</h2>
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" value="2022-05-22" min="2022-05-22" max="2025-01-01" />
+            </div>
 
-          <div class="booking-date">
-            <h2 class="heading-secondary-nr2">Select date</h2>
-            <label for="date">Date</label>
-            <input type="date" id="date" name="date" value="2022-05-22" min="2022-05-22" max="2025-01-01" />
-          </div>
-
-          <div class="pay">
-            <h2 class="heading-secondary-nr2">Select a paymant methode</h2>
-            <a href="#" class="btn btn-booknow">Pay now</a>
-            <a href="#" class="btn btn-donate">Pay at entrance</a>
+            <div class="visitors-nr">
+              <h2 class="heading-secondary-nr2">Number of visitors:</h2>
+              <label for="quantity">Number</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="30" />
+            </div>
+            <div class="pay">
+              <h2 class="heading-secondary-nr2">Select a paymant methode</h2>
+              <a href="#" class="btn btn-booknow">Pay now</a>
+              <a href="#" class="btn btn-donate">Pay at entrance</a>
+            </div>
           </div>
         </form>
       </section>

@@ -150,4 +150,9 @@
   .opening {
     margin: 0;
   }
+
+  /* teachers page */
+  .section-teachers form {
+    margin: 0;
+  }
 }
