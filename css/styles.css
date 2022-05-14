@@ -1,3 +1,6 @@
+/* ********* */
+/* Home Page */
+
 /* NAV */
 
 .header {
@@ -119,7 +122,6 @@ label[for="mobile-nav"] i {
 }
 
 /* SECTION ABOUT */
-
 .section-about p {
   font-size: 2rem;
   line-height: 1.5;
@@ -157,7 +159,7 @@ label[for="mobile-nav"] i {
 .explorer-link {
   grid-column: 1/-1;
 
-  transition: all 1s;
+  transition: all 0.3s;
 }
 
 .explorer-link:hover {
@@ -215,15 +217,9 @@ label[for="mobile-nav"] i {
 .event {
   justify-self: end;
   max-width: 40rem;
-  border: 1px solid #5300b8;
+  object-fit: cover;
   background-color: #fff;
   margin-bottom: 12rem;
-}
-
-.event-price {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #5300b8;
 }
 
 .event-date {
@@ -232,13 +228,7 @@ label[for="mobile-nav"] i {
 }
 
 .event-description {
-  margin: 1rem 0;
-}
-
-.event .btn {
-  grid-row: 6;
-  grid-column: 2/3;
-  text-align: center;
+  padding: 3rem 0 6rem 0;
 }
 
 /* FOOTER */
@@ -311,7 +301,7 @@ label[for="mobile-nav"] i {
   margin-top: 3rem;
 }
 
-/* ******************* */
+/* *********** */
 /* Visit page */
 
 .section-visit p {
@@ -355,46 +345,58 @@ label[for="mobile-nav"] i {
   font-size: 5rem;
 }
 
-/* ******************* */
+/* ************** */
 /* Book now page */
 .section-booking form {
   background-color: #fff;
 }
 
-.booking-event,
-.booking-date,
-.visitors-nr,
-.pay {
-  text-align: center;
-  display: inline-block;
-  border: 1px solid rgba(211, 208, 208, 0.4);
-  box-shadow: 0 6px 10px rgba(211, 208, 208, 0.4);
-
-  padding: 2rem;
+.booking-events.grid-3cols {
+  row-gap: 0;
+  column-gap: 3rem;
 }
 
 .booking-events h2 {
   grid-column: 1/-1;
-  margin: 0;
+  padding: 0;
+}
+.booking-event {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(211, 208, 208, 0.7);
+}
+.booking-event input[type="radio"] {
+  opacity: 0;
+}
+.booking-event label {
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+.booking-event input[type="radio"]:checked + label {
+  background-color: #ffd700;
 }
 
-.booking-events.grid-3cols {
-  margin-bottom: 6rem;
+.booking-info.grid-3cols {
+  margin-top: 10rem;
+  column-gap: 4rem;
 }
-
-.booking-events .grid-2cols {
-  grid-template-rows: 1fr 1fr;
-}
-
-.pay {
+/* .pay {
   grid-column: 2/3;
-}
+  grid-row: 1/-1;
+  align-items: center;
+} */
 
-/* ******************* */
+/* ************ */
 /* Donate page */
 
 .support p {
   margin-bottom: 2rem;
+}
+
+.support p:first-child {
+  font-family: "Lora", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 1.9rem;
 }
 
 .support a {
@@ -402,8 +404,8 @@ label[for="mobile-nav"] i {
   text-transform: uppercase;
 }
 
-/* ******************* */
-/* Teachers page */
+/* ************************************ */
+/* Teachers, childrens, researchers page*/
 .form input,
 .form textarea {
   padding: 1rem;
@@ -411,22 +413,18 @@ label[for="mobile-nav"] i {
   margin-bottom: 2rem;
 }
 
-.section-teachers p {
+.section-form p {
   margin-bottom: 2rem;
 }
 
-.section-teachers p:first-child {
+.section-form p:first-child {
   line-height: 1.2;
   font-weight: 600;
   font-family: "monsteratt", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.section-teachers p:last-child {
+.section-from p:last-child {
   margin-top: 4rem;
   font-size: 2rem;
   line-height: 1.2;
-}
-
-.section-teachers.grid-2cols {
-  align-content: center;
 }
