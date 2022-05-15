@@ -35,7 +35,7 @@ img {
 
 .cover-img {
   width: 100%;
-  height: 45rem;
+  height: 50rem;
   object-fit: cover;
 }
 
@@ -64,6 +64,12 @@ form {
   padding: 6rem;
   display: flex;
   flex-direction: column;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top: 15rem;
 }
 
 .heading-primary {
@@ -116,10 +122,4 @@ form {
 
 .auto {
   grid-template-columns: 1fr auto;
-}
-
-.container {
-  max-width: 80%;
-  margin: 0 auto;
-  padding-top: 10rem;
 }

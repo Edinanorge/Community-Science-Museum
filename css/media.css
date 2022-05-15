@@ -4,6 +4,12 @@
   }
 }
 
+@media (min-width: 1400px) {
+  .container {
+    width: 75%;
+  }
+}
+
 @media (max-width: 1200px) {
   /* nav */
   .header {
@@ -29,7 +35,7 @@
     display: none;
 
     position: absolute;
-    top: 15rem;
+    top: 10rem;
     left: 0;
     background-color: #fff;
     z-index: 999;
@@ -68,11 +74,12 @@
     gap: 3rem;
     text-align: center;
   }
-}
+  .section-cta.grid-2cols {
+    display: block;
+  }
 
-@media (min-width: 1200px) {
-  .container {
-    width: 70%;
+  .section-cta .form {
+    margin: 0 auto;
   }
 }
 
@@ -126,6 +133,11 @@
     grid-template-columns: 1fr;
   }
 
+  .header .logo {
+    margin-left: 0;
+    max-width: 15rem;
+  }
+
   figure {
     border: 1px solid rgba(211, 208, 208, 0.7);
   }
@@ -150,6 +162,20 @@
 
   .opening {
     margin: 0;
+  }
+
+  /* section cta */
+  .section-cta.container {
+    max-width: 100%;
+  }
+  .section-cta h1 {
+    font-size: 4rem;
+  }
+  .section-cta p {
+    font-size: 1.8rem;
+  }
+  .section-cta .form {
+    padding: 3rem;
   }
 
   /* teachers, childrens, researchers page */

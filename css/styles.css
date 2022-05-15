@@ -5,7 +5,7 @@
 
 .header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
@@ -13,7 +13,6 @@
 
   background-color: #fff;
   width: 100%;
-  height: 15rem;
   border-bottom: 1px solid rgba(211, 208, 208, 0.4);
 
   position: fixed;
@@ -29,13 +28,17 @@
 .navigation li {
   list-style: none;
 }
+.header .logo {
+  margin-left: 3rem;
+}
 
 .logo {
-  max-width: 20rem;
+  max-width: 18rem;
 }
 
 .search {
   margin-left: 10rem;
+  margin-right: 3rem;
   opacity: 0.7;
   align-self: center;
   font-weight: 400;
@@ -114,11 +117,12 @@ label[for="mobile-nav"] i {
   text-transform: uppercase;
   color: #fff;
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
 }
 
 .free-admission p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 /* SECTION ABOUT */
@@ -138,6 +142,11 @@ label[for="mobile-nav"] i {
   color: #333;
   display: inline-block;
 }
+
+.section-explore .heading-secondary {
+  text-align: center;
+}
+
 .section-explore h3 {
   text-align: center;
 }
@@ -175,9 +184,6 @@ label[for="mobile-nav"] i {
 }
 
 /* SECTION EXHIBITIONS */
-.section-exhibitions {
-  margin-bottom: 10rem;
-}
 
 .section-exhibitions h3 {
   text-align: left;
@@ -191,44 +197,79 @@ label[for="mobile-nav"] i {
 }
 
 /* SECTION EVENTS */
-.section-events {
-  max-width: 100%;
-  background-color: #ffd700;
+.event {
+  justify-self: center;
+  max-width: 40rem;
+  background-color: #fff;
+  border: 1px solid #5300b8;
+  margin-bottom: 12rem;
 
   position: relative;
   overflow: hidden;
-  margin-bottom: 0;
 }
 
-.section-events::before {
+.event::before {
   content: "special";
   position: absolute;
-  top: 4rem;
+  top: 2rem;
   right: -5rem;
   transform: rotate(37deg);
-  background-color: #00c1ff;
-  padding: 1rem 10rem;
-  font-size: 2.5rem;
+  background-color: #ffd700;
+  padding: 0.5rem 6rem;
+  font-size: 2rem;
   font-weight: 800;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
 
-.event {
-  justify-self: end;
-  max-width: 40rem;
-  object-fit: cover;
-  background-color: #fff;
-  margin-bottom: 12rem;
-}
-
 .event-date {
   text-transform: uppercase;
-  font-size: 1.4;
+  font-size: 1.4rem;
 }
 
 .event-description {
   padding: 3rem 0 6rem 0;
+}
+
+/* SECTION CTA */
+
+.section-cta {
+  background-color: #ffd700;
+  margin-top: 10rem;
+  border-radius: 3rem;
+  padding: 6rem;
+}
+
+.section-cta.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.section-cta .heading-primary {
+  font-size: 5.6rem;
+  text-align: center;
+  grid-column: 1/-1;
+}
+
+.section-cta p {
+  font-size: 2.4rem;
+  margin: 6rem 0;
+  font-family: "lora", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section-cta .form {
+  background-color: #fff;
+  max-width: 60rem;
+  border-radius: 3rem;
+}
+
+.section-cta .form input {
+  border: 1px solid rgba(211, 208, 208, 0.7);
+}
+
+.form .btn {
+  margin-top: 4rem;
+  text-align: center;
+  border-radius: 0.8rem;
 }
 
 /* FOOTER */
@@ -345,47 +386,6 @@ label[for="mobile-nav"] i {
   font-size: 5rem;
 }
 
-/* ************** */
-/* Book now page */
-.section-booking form {
-  background-color: #fff;
-}
-
-.booking-events.grid-3cols {
-  row-gap: 0;
-  column-gap: 3rem;
-}
-
-.booking-events h2 {
-  grid-column: 1/-1;
-  padding: 0;
-}
-.booking-event {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgba(211, 208, 208, 0.7);
-}
-.booking-event input[type="radio"] {
-  opacity: 0;
-}
-.booking-event label {
-  display: inline-block;
-  padding: 1rem 2rem;
-}
-.booking-event input[type="radio"]:checked + label {
-  background-color: #ffd700;
-}
-
-.booking-info.grid-3cols {
-  margin-top: 10rem;
-  column-gap: 4rem;
-}
-/* .pay {
-  grid-column: 2/3;
-  grid-row: 1/-1;
-  align-items: center;
-} */
-
 /* ************ */
 /* Donate page */
 
@@ -406,6 +406,7 @@ label[for="mobile-nav"] i {
 
 /* ************************************ */
 /* Teachers, childrens, researchers page*/
+
 .form input,
 .form textarea {
   padding: 1rem;
@@ -427,4 +428,15 @@ label[for="mobile-nav"] i {
   margin-top: 4rem;
   font-size: 2rem;
   line-height: 1.2;
+}
+/* ******************************************* */
+/* event-night, event-prof, event-loan peges */
+.section-event.container {
+  align-content: ;
+}
+.section-event img {
+  margin: 0 auto;
+}
+.event-info {
+  margin-top: 2rem;
 }

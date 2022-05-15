@@ -27,12 +27,12 @@
       <input type="checkbox" id="mobile-nav" class="mobile-nav" />
       <nav class="navigation">
         <ul>
-          <li><a class="navigation-link" href="#about">About</a></li>
-          <li><a class="navigation-link" href="#explore">Explor</a></li>
-          <li><a class="navigation-link" href="#exhibitions">Exhibitions</a></li>
-          <li><a class="navigation-link" href="#events">Events</a></li>
+          <li><a class="navigation-link" href="index.html#about">About</a></li>
+          <li><a class="navigation-link" href="index.html#explore">Explor</a></li>
+          <li><a class="navigation-link" href="index.html#exhibitions">Exhibitions</a></li>
+          <li><a class="navigation-link" href="index.html#events">Events</a></li>
           <li><a class="navigation-link" href="visit.html">Visit</a></li>
-          <li><a href="booking.html" class="navigation-link btn btn-booknow">Book now</a></li>
+          <li><a href="index.html#cta" class="navigation-link btn btn-booknow">Book now</a></li>
           <li><a href="donate.html" class="navigation-link btn btn-donate">Donate</a></li>
           <li class="search">
             <label for="search">Search</label>
@@ -57,7 +57,7 @@
       </section>
 
       <section id="about" class="section-about container grid-2cols">
-        <img src="images/about.jpg" alt="" />
+        <img src="images/about.jpg" alt="Picture from a modern looking science museum" />
         <div class="about-text">
           <h2 class="heading-secondary">How we are.</h2>
           <p class="about-description">
@@ -77,7 +77,10 @@
         <figure class="explorer">
           <a href="teacher.html" class="explorer-link">
             <h3 class="heading-tertiary">Teacher</h3>
-            <img src="images/teacher.png" alt="" />
+            <img
+              src="images/teacher.png"
+              alt="Teacher in gray sweater beside a boy in black and white plaid dress shirt"
+            />
             <p>
               As a community-driven museum, we want to work with schools to create places of learning and exploring.
             </p>
@@ -88,9 +91,9 @@
         <figure class="explorer">
           <a href="children.html" class="explorer-link">
             <h3 class="heading-tertiary">Children</h3>
-            <img src="images/kid.jpg" alt="" />
+            <img src="images/kid.jpg" alt="Boy in blue and black striped long sleeve shirt reading a book" />" />
             <p>
-              Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to
+              Are you a young person looking to learn more about science? Come on down to our museum, there's plenty to
               see and do.
             </p>
           </a>
@@ -100,7 +103,10 @@
         <figure class="explorer">
           <a href="researcher.html" class="explorer-link">
             <h3 class="heading-tertiary">Researcher</h3>
-            <img src="images/researchers.png" alt="" />
+            <img
+              src="images/researchers.png"
+              alt="scientist man in white dress shirt standing beside a scientist woman in white dress shirt"
+            />
             <p>Are you looking to get involved with our team of researchers and academics?</p>
           </a>
           <a href="researcher.html" class="read-more-link"><i class="fa-solid fa-circle-arrow-right"></i>Read more</a>
@@ -110,16 +116,16 @@
       <section id="exhibitions" class="section-exhibitions container grid-3cols">
         <h2 class="heading-secondary">Exhibition Spaces</h2>
         <figure class="exhibition">
-          <img src="images/cosmology.jpg" alt="" />
+          <img src="images/cosmology.jpg" alt="lunar eclipse" />
           <figcaption>
             <h3 class="heading-tertiary">Cosmology</h3>
             <p>
-              Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky.
+              Explore the wonders of our cosmos. Our fantastic exhibition, 'The Sky Above Us', explores the night sky.
             </p>
           </figcaption>
         </figure>
         <figure class="exhibition">
-          <img src="images/evolution.jpg" alt="" />
+          <img src="images/evolution.jpg" alt="skeleton and skeleton figurines on white wall" />
           <figcaption>
             <h3 class="heading-tertiary">Evolution</h3>
             <p>
@@ -129,7 +135,7 @@
           </figcaption>
         </figure>
         <figure class="exhibition">
-          <img src="images/Biology.jpg" alt="" />
+          <img src="images/Biology.jpg" alt="statue of skeleton man wearing hat" />
           <figcaption>
             <h3 class="heading-tertiary">Biology and Medicine</h3>
             <p>
@@ -139,7 +145,7 @@
           </figcaption>
         </figure>
         <figure class="exhibition">
-          <img src="images/AI.png" alt="" />
+          <img src="images/AI.png" alt="woman in blue dress shirt standing near purple and black machine" />
           <figcaption>
             <h3 class="heading-tertiary">Robotics an AI</h3>
             <p>
@@ -148,7 +154,7 @@
           </figcaption>
         </figure>
         <figure class="exhibition">
-          <img src="images/encology.jpg" alt="" />
+          <img src="images/encology.jpg" alt="black metal frame with white background" />
           <figcaption>
             <h3 class="heading-tertiary">Encology</h3>
             <p>
@@ -158,7 +164,7 @@
           </figcaption>
         </figure>
         <figure class="exhibition">
-          <img src="images/art.jpg" alt="" />
+          <img src="images/art.jpg" alt="man in white dress shirt wearing black and white vr painting" />
           <figcaption>
             <h3 class="heading-tertiary">Modern art</h3>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
@@ -166,42 +172,66 @@
         </figure>
       </section>
 
-      <section id="events" class="section-events">
-        <div class="container grid-3cols gap">
-          <h2 class="heading-secondary">Our guided tours</h2>
-          <figure class="event">
-            <img src="images/prof.png" alt="" />
-            <figcaption>
-              <h3 class="heading-tertiary">Professor of Aeronautics</h3>
+      <section id="events" class="section-events container grid-3cols gap">
+        <h2 class="heading-secondary">Spetial events</h2>
+        <figure class="event">
+          <img src="images/prof.png" alt="smiling woman in black framed eyeglasses" />
+          <figcaption>
+            <h3 class="heading-tertiary">Professor of Aeronautics</h3>
+            <p class="event-date">Form <strong>1. jan. </strong> to <strong>1.jan. 2022</strong></p>
+            <p class="event-description">Prof Sheila Widnall fom Massachusetts Institute of Technology.</p>
+            <a class="btn btn-read-more" href="event-prof.html">Read more</a>
+          </figcaption>
+        </figure>
+        <figure class="event">
+          <img src="images/night.png" alt="pictur from a museum after opening hour." />
+          <figcaption>
+            <h3 class="heading-tertiary">Night in the Museum</h3>
+            <p class="event-date">Form <strong>1. jan. </strong> to <strong>1.jan. 2022</strong></p>
+            <p class="event-description">Get your family together for an exciting night in the museum.</p>
+            <a class="btn btn-read-more" href="event-night.html">Read more</a>
+          </figcaption>
+        </figure>
+        <figure class="event">
+          <img
+            src="images/loan.png"
+            alt="white wind turbine on brown grass field under white clouds and blue sky during daytime"
+          />
+          <figcaption>
+            <h3 class="heading-tertiary">Energetica Exhibition on Loan</h3>
+            <p class="event-date">Form <strong>1. jan. </strong> to <strong>1.jan. 2022</strong></p>
+            <p class="event-description">'Wind Island' that shows how wind turbines are able to create power.</p>
+            <a class="btn btn-read-more" href="event-loan.html">Read more</a>
+          </figcaption>
+        </figure>
+      </section>
 
-              <span class="event-price">70 NOK/pers.</span>
-              <p class="event-date">Form <strong>1. jan. </strong> to <strong>1.jan. 2022</strong></p>
-              <p class="event-description">Prof Sheila Widnall fom Massachusetts Institute of Technology.</p>
-              <a class="btn btn-cta" href="booking.html">Book now</a>
-            </figcaption>
-          </figure>
-          <figure class="event">
-            <img src="images/night.png" alt="" />
-            <figcaption>
-              <h3 class="heading-tertiary">Night in the Museum</h3>
-
-              <span class="event-price">70 NOK/pers.</span>
-              <p class="event-date">Form <strong>1. jan. </strong> to <strong>1.jan. 2022</strong></p>
-              <p class="event-description">Get your family together for an exciting night in the museum.</p>
-              <a class="btn btn-cta" href="booking.html">Book now</a>
-            </figcaption>
-          </figure>
-          <figure class="event">
-            <img src="images/loan.png" alt="" />
-            <figcaption>
-              <h3 class="heading-tertiary">Energetica Exhibition on Loan</h3>
-              <span class="event-price">70 NOK/pers.</span>
-              <p class="event-date">Form <strong>1. jan. </strong> to <strong>1.jan. 2022</strong></p>
-              <p class="event-description">'Wind Island' that shows how wind turbines are able to create power.</p>
-              <a class="btn btn-cta" href="booking.html">Book now</a>
-            </figcaption>
-          </figure>
+      <section id="cta" class="section-cta container grid-2cols">
+        <h2 class="heading-primary">Book your guided tour here</h2>
+        <div class="booking-info">
+          <p>
+            There are guided tours of the museum that leave every hour. These tours are
+            <strong>70 NOK per person</strong> and include a handy printed guide of the museum.
+          </p>
+          <p>
+            If you would like to organise a guided tour for your group of<strong> 6 or more people</strong>, please
+            contact us to arrange the tour.
+          </p>
         </div>
+        <form action="post" class="form">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+          <label for="phone">Enter your phone number:</label>
+          <input type="tel" id="phone" name="phone" />
+
+          <label for="date">Select Date</label>
+          <input type="date" id="date" name="date" value="2022-05-22" min="2022-05-22" max="2025-01-01" />
+
+          <label for="quantity">Number of participants</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="5" />
+
+          <a href="#" class="btn btn-submit">Book now</a>
+        </form>
       </section>
     </main>
     <footer class="footer">

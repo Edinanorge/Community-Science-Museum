@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Community Science Museum is committed to make science accessible to all." />
-    <title>Comunity Science museum / Home page</title>
+    <meta name="description" content="Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you." />
+    <title>Comunity Science museum /Explore-researcher page</title>
 
     <link href="css/general.css" rel="stylesheet" />
     <link href="css/links.css" rel="stylesheet" />
@@ -27,12 +27,12 @@
       <input type="checkbox" id="mobile-nav" class="mobile-nav" />
       <nav class="navigation">
         <ul>
-          <li><a class="navigation-link" href="index.html">About</a></li>
-          <li><a class="navigation-link current" href="index.html">Explor</a></li>
-          <li><a class="navigation-link" href="index.html">Exhibitions</a></li>
-          <li><a class="navigation-link" href="index.html">Events</a></li>
+          <li><a class="navigation-link" href="index.html#about">About</a></li>
+          <li><a class="navigation-link current" href="index.html#explor">Explor</a></li>
+          <li><a class="navigation-link" href="index.html#exhibitions">Exhibitions</a></li>
+          <li><a class="navigation-link" href="index.html#events">Events</a></li>
           <li><a class="navigation-link" href="visit.html">Visit</a></li>
-          <li><a href="booking.html" class="navigation-link btn btn-booknow">Book now</a></li>
+          <li><a href="index.html#cta" class="navigation-link btn btn-booknow">Book now</a></li>
           <li><a href="donate.html" class="navigation-link btn btn-donate">Donate</a></li>
           <li class="search">
             <label for="search">Search</label>
@@ -43,24 +43,32 @@
     </header>
     <main>
       <section class="section-form">
-        <img class="cover-img" src="images/researcher.jpg" alt="" />
+        <img
+          class="cover-img"
+          src="images/researcher.jpg"
+          alt="Female scientist pipetting colored chemicals into a tube."
+        />
         <div class="container grid-2cols">
           <h1 class="heading-primary-nr2">Researchers</h1>
           <div class="teachers-text">
-          <p>Are you looking to get involved with our team of researchers and academics? </p>
-          <p> Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country.</p>
-          <p>To find out more send us a message.</p>
-        </div>
-          <form action="" method="post" class="form">
+            <p>Are you looking to get involved with our team of researchers and academics?</p>
+            <p>
+              Our museum offers various ways for you to use our resources and contribute towards them. We have online
+              records, laboratory space, and a working relationship with a number of universities around the country.
+            </p>
+            <p>To find out more send us a message.</p>
+          </div>
+          <form action="post" class="form">
             <label for="institute-name">Institute Name/ Name</label>
-            <input type="text" name="institute-name" id="institute-name">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
+            <input type="text" name="institute-name" id="institute-name" />
+            <label for="e-mail">E-mail</label>
+            <input type="email" name="e-mail" id="e-mail" />
             <label for="message">Message</label>
             <textarea name="message" id="message" cols="20" rows="5"></textarea>
-            <input type="submit" class="btn-submit" >
+            <input type="submit" class="btn-submit" />
           </form>
-
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container grid-4cols">
