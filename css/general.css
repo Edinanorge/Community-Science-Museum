@@ -66,6 +66,11 @@ form {
   flex-direction: column;
 }
 
+.form input:hover,
+.form textarea:hover {
+  background-color: #fbf5d5;
+}
+
 .container {
   max-width: 80%;
   margin: 0 auto;
