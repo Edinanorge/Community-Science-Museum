@@ -85,7 +85,7 @@ label[for="mobile-nav"] i {
   background-image: url(../images/HEro.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: top center;
+  background-position-y: top;
 
   opacity: 0.4;
 }
@@ -431,9 +431,7 @@ label[for="mobile-nav"] i {
 }
 /* ******************************************* */
 /* event-night, event-prof, event-loan peges */
-.section-event.container {
-  align-content: ;
-}
+
 .section-event img {
   margin: 0 auto;
 }
