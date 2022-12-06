@@ -26,7 +26,7 @@ An interactive science museum called the Community Science Museum is opening in 
 All you have to do is clone the repo:
 
 ```bash
-git clone git@github.com:Edinanorge/Community-Science-Museum.git
+git clone https://github.com/Edinanorge/Community-Science-Museum.git
 ```
 
 ## Contributing
