@@ -2,16 +2,15 @@
 
 <img width="934" alt="museum" src="https://user-images.githubusercontent.com/52853951/205637921-4b2a0d0a-8e0a-4ac9-97a8-8f2b915c3b02.png">
 
-/Community Science Museum
+[Community Science Museum](https://coruscating-mandazi-857746.netlify.app) is a Semester Project 1 
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+An interactive science museum called the Community Science Museum is opening in your town/city. Its core target audience is primary and middle school children (7-15) and families with young children. The museum wants a website that is informative and appealing, that will attract both middle school pupils and their parents. The site should appeal to youngsters without pandering; it should take for granted that the audience is inquisitive and intelligent. The website should be informative and engaging, but should encourage viewers to visit the museum itself.
 
-You can add some bullet points if you'd like to:
 
-- List item 1
-- List item 2
+- Responsive Design
+- Ac
 - List item 3
 
 ## Built With
@@ -23,29 +22,13 @@ You can add some bullet points if you'd like to:
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
+All you have to do is clone the repo:
 
-1. Clone the repo:
 
 ```bash
 git clone git@github.com:NoroffFEU/portfolio-1-example.git
 ```
 
-2. Install the dependencies:
-
-```
-npm install
-```
-
-### Running
-
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
-
-```bash
-npm run start
-```
 
 ## Contributing
 
